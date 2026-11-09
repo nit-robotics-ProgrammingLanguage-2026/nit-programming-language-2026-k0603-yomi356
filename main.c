@@ -1,20 +1,26 @@
+
 #include <stdio.h>
 
 int main(void)
 {
     int n;
-    int i;
-    int sum = 0;
+    long long i;
+    long long sum = 0;
+
     scanf("%d", &n);
-    if (n <= 0)
+
+    if (n < 0)
     {
-        printf("NG");
+        printf("NG\n");
         return 0;
     }
-    for (i = 1; i < n; i++)
+
+    for (i = 1; i <= n; i++)
     {
         sum += i;
     }
-    printf("%d", sum);
+
+    printf("%lld\n", sum);
+
     return 0;
 }
